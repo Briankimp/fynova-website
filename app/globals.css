@@ -4,33 +4,33 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: #0A0A0D; /* Dark background */
+    --foreground: #FAFAFA; /* Light text */
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: #0A0A0D; /* Dark card background */
+    --card-foreground: #FAFAFA; /* Light card text */
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: #0A0A0D; /* Dark popover background */
+    --popover-foreground: #FAFAFA; /* Light popover text */
 
-    --primary: 263 70% 50%;
-    --primary-foreground: 0 0% 98%;
+    --primary: #7E22CE; /* Purple primary */
+    --primary-foreground: #FAFAFA; /* Light text on primary */
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: #272729; /* Dark gray secondary */
+    --secondary-foreground: #FAFAFA; /* Light text on secondary */
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: #272729; /* Dark gray muted */
+    --muted-foreground: #A1A1AF; /* Gray muted text */
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: #272729; /* Dark gray accent */
+    --accent-foreground: #FAFAFA; /* Light text on accent */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: #9F1239; /* Red destructive */
+    --destructive-foreground: #FAFAFA; /* Light text on destructive */
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: #272729; /* Dark gray border */
+    --input: #272729; /* Dark gray input */
+    --ring: #D3D3DB; /* Light gray ring */
 
     --radius: 0.5rem;
   }
@@ -52,7 +52,7 @@
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background-color: theme("colors.primary.DEFAULT");
+  background-color: #7E22CE; /* Primary purple */
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -63,7 +63,7 @@
 .cursor-outline {
   width: 40px;
   height: 40px;
-  border: 2px solid rgba(var(--primary), 0.5);
+  border: 2px solid rgba(126, 34, 206, 0.5); /* Primary purple with opacity */
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -75,7 +75,7 @@
 .hover-effect:hover ~ .cursor-outline {
   width: 80px;
   height: 80px;
-  background-color: rgba(var(--primary), 0.1);
+  background-color: rgba(126, 34, 206, 0.1); /* Primary purple with opacity */
 }
 
 .parallax-container {
@@ -94,7 +94,7 @@
 
 .typewriter-text {
   overflow: hidden;
-  border-right: 0.15em solid theme("colors.primary.DEFAULT");
+  border-right: 0.15em solid #7E22CE; /* Primary purple */
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
@@ -115,7 +115,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: theme("colors.primary.DEFAULT");
+    border-color: #7E22CE; /* Primary purple */
   }
 }
 
@@ -146,4 +146,3 @@
 .service-card:hover .service-icon {
   transform: scale(1.1);
 }
-
