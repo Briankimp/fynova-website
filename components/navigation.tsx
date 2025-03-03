@@ -59,13 +59,13 @@ const Navigation = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FyNova_Logo_Black-Photoroom%5B1%5D-qD6h1HRGDuZUUSki25TDiBiCLEubDr.png"
+            {/* <Image
               alt="FyNova Logo"
               width={120}
               height={40}
               className="h-10 w-auto"
-            />
+            /> */}
+            <h1 className="text-2xl font-bold text-primary">FyNova.CO</h1>
           </motion.div>
         </Link>
 
