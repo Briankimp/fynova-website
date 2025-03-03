@@ -223,5 +223,36 @@ export default function BrandTransformationPage() {
                   <span className="text-primary text-2xl font-bold">{step.number}</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>\
-
+                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* CTA Section */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Brand?</h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Get in touch with our team to discuss how we can elevate your brand to the next level.
+            </p>
+            <div className="flex justify-center">
+              <a href="/contact" className="btn-primary mr-4">Contact Us</a>
+              <a href="/portfolio" className="btn-outline">View Our Work</a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </>
+  )
+}
